@@ -28,8 +28,19 @@ body {
 .nav2 {
     list-style-type: none;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 0;    
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav1 a,
+.nav2 a {
+    margin-top: 1rem;
 }
 
 a:visited {
