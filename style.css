@@ -7,7 +7,8 @@ body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    /* grid-template-columns: 1fr 4fr; */
+    grid-template-columns: 1fr 4fr ;
     grid-template-rows: 1fr 4fr;
     box-sizing: border-box;
 }
@@ -75,7 +76,7 @@ a:visited {
 .contentButtons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 #search {
@@ -97,6 +98,7 @@ a:visited {
 .greeting {
     display: flex;
     flex-direction: column;
+    gap: 4px
 }
 
 .greeting .time {
@@ -126,11 +128,12 @@ a:visited {
 /* Content Panel */
 
 .content {
-    background-color: lightslategray;
+    background-color: lightgrey;
     padding: 20px;
     display: grid;
     gap: 20px;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .projects {
@@ -163,7 +166,7 @@ a:visited {
 
 .card {
     height: 150px;
-    border-left: 6px solid goldenrod;
+    border-left: 6px solid orange;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -174,6 +177,7 @@ a:visited {
     text-decoration: none;
 }
 
+#contentHeader,
 .cardTitle {
     font-size: 1.5rem;
 }
@@ -191,4 +195,21 @@ a:visited {
 .cardIcons {
     margin-top: auto;
     margin-left: auto;
+}
+
+.announceCard,
+.trendingCard {
+    height: max;
+}
+
+#announcementTitle {
+
+}
+
+#announcementText {
+    color: gray;
+    display: block;
+    height: 10vh;
+    overflow: auto;
+    /* border: 1px solid red; */
 }
