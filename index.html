@@ -12,30 +12,30 @@
     <div class="container">
 
         <div class="sidebar">
-            <div class="logo"><a href="">
+            <div class="logo"><a href="" class="sidebarLink">
                 <img src="assets/logo48.png" alt="Logo: " style="width:48px; height:48px;">Dashboard</a>
             </div>
             <ul class="nav1">
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/home.png" alt="Home icon: " style="width:24px; height:24px">Home</a>
                 </li>
-                <li class="navItem"><a href="https://github.com/jcampbell57" target="_blank">
+                <li class="navItem"><a href="https://github.com/jcampbell57" target="_blank" class="sidebarLink">
                     <img src="assets/profile.png" alt="Profile icon: " style="width:24px; height:24px">Profile</a></li>
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/messages.png" alt="Messages icon: " style="width:24px; height:24px">Messages</a></li>
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/history.png" alt="History icon: " style="width:24px; height:24px">History</a></li>
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/tasks.png" alt="Tasks icon: " style="width:24px; height:24px">Tasks</a></li>
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/communities.png" alt="Communities icon: " style="width:24px; height:24px">Communities</a></li>
             </ul>
             <ul class="nav2">
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/settings.png" alt="Settings icon: " style="width:24px; height:24px">Settings</a></li>
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/support.png" alt="Support icon: " style="width:24px; height:24px">Support</a></li>
-                <li class="navItem"><a href="">
+                <li class="navItem"><a href="" class="sidebarLink">
                     <img src="assets/privacy.png" alt="Privacy icon: " style="width:24px; height:24px">Privacy</a></li>
             </ul>
         </div>
@@ -48,16 +48,22 @@
                 </div>
                 <div class="userMenu">
                     <img src="assets/notifications.png" alt="Notification icon: " style="width:24px; height:24px">
-                    <a href="https://github.com/jcampbell57" target="_blank"><span id="user">Jane Doe</span></a>
+                    <a href="https://github.com/jcampbell57" target="_blank" class="withIcon">
+                        <img src="assets/m-user-40.png" alt="(Avatar)" style="width:40px; height:40px">
+                        <span class="user">Jason Campbell</span>
+                    </a>
                 </div>
             </div>
             <div class="headerBot">
-                <div class="welcomeUser">
-                    <div class="greeting">
-                        <span class="time">Hey there,</span>
-                        <span id="user">Jane Doe (@Jane)</span>
+                <a href="https://github.com/jcampbell57" target="_blank" class="withIcon">
+                    <img src="assets/m-user-80.png" alt="" style="width:60px; height:60px">
+                    <div class="welcomeUser">
+                        <div class="greeting">
+                            <span class="time">Hey there,</span>
+                            <span class="user">Jason (@jcampbell57)</span>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div class="contentButtons">
                     <button>New</button>
                     <button>Upload</button>
@@ -180,34 +186,51 @@
                 <div class="trendingCard">
 
                     <div class="trendingContainer">
-                        <div class="trendingAvatar"></div>
-                        <div class="trender">
-                            <span class="trendingUser">@Jane</span>
-                            <span class="trendingProject">Sign up form</span>
-                        </div>
-                        </div>
-                    
-                        <div class="trendingContainer">
-                        <div class="trendingAvatar"></div>
-                        <div class="trender">
-                            <span class="trendingUser">@John</span>
-                            <span class="trendingProject">World peace builder</span>
-                        </div>    
+                        <a href="https://github.com/jcampbell57" target="_blank" class="withIcon">
+                            <div class="trendingAvatar">
+                                <img src="assets/m-user-40.png" alt="(Avatar)" style="width:40px; height:40px">
+                            </div>
+                            <div class="trender">
+                                <span class="user">@jcampbell57</span>
+                                <span class="trendingProject">Sign up form</span>
+                            </div>
+                        </a>
                     </div>
                     
                     <div class="trendingContainer">
-                        <div class="trendingAvatar"></div>
-                        <div class="trender">
-                            <span class="trendingUser">@Jane</span>
-                            <span class="trendingProject">Calculator</span>
-                        </div>    
+                        <a href="" class="withIcon">
+                            <div class="trendingAvatar">
+                                <img src="assets/f-user-40.png" alt="(Avatar)" style="width:40px; height:40px">
+                            </div>
+                            <div class="trender">
+                                <span class="user">@Josephine</span>
+                                <span class="trendingProject">World peace builder</span>
+                            </div>    
+                        </a>
                     </div>
+                    
                     <div class="trendingContainer">
-                        <div class="trendingAvatar"></div>
-                        <div class="trender">
-                            <span class="trendingUser">@Jenoveve</span>
-                            <span class="trendingProject">Traffic reduction app</span>
-                        </div>    
+                        <a href="https://github.com/jcampbell57" target="_blank" class="withIcon">
+                            <div class="trendingAvatar">
+                                <img src="assets/m-user-40.png" alt="(Avatar)" style="width:40px; height:40px">
+                            </div>
+                            <div class="trender">
+                                <span class="user">@jcampbell57</span>
+                                <span class="trendingProject">Calculator</span>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="trendingContainer">
+                        <a href="" class="withIcon">
+                            <div class="trendingAvatar">
+                                <img src="assets/f-user-40.png" alt="(Avatar)" style="width:40px; height:40px">
+                            </div>
+                            <div class="trender">
+                                <span class="user">@Jenoveve</span>
+                                <span class="trendingProject">Traffic reduction app</span>
+                            </div>    
+                        </a>
                     </div>
 
                 </div>
