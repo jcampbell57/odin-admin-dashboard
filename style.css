@@ -10,8 +10,8 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     box-sizing: border-box;
-    /* border: 1px solid blue; */
 }
+
 
 
 /* Sidebar Panel */
@@ -20,7 +20,6 @@ body {
     background-color: dodgerblue;
     color: white;
     padding: 20px;
-    /* border: 1px solid red; */
     grid-row: 1 / 3;
 }
 
@@ -32,10 +31,12 @@ body {
     padding: 0;    
 }
 
+/* center links with icons and provide space between */
 .sidebar a {
     display: flex;
     align-items: center;
-    gap: 6px;
+    text-decoration: none;
+    gap: 8px;
 }
 
 .nav1 a,
@@ -44,38 +45,83 @@ body {
 }
 
 a:visited {
-    /* text-decoration: none; */
     color: white;
 }
+
 
 
 /* Header Panel */
 
 .header {
+    padding: 20px 40px;
     background-color: lightgrey;
-    padding: 20px;
     box-shadow: 4px 1px 5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 2fr 3fr;
+}
+
+.header div {
     /* border: 1px solid red; */
 }
 
-.containerMenu button {
-    background-color: dodgerblue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: calc(10px + 0.5rem);
+.headerTop,
+.headerBot {
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
 }
 
 .search,
 .userMenu,
-.welcomeUser,
-.containerMenu {
-    padding: 20px;
-    border: 1px solid red;
+.contentButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+#search {
+    padding: 5px 10px;
+    border: none;
+    border-radius: calc(1rem + 2.5px);
+    display: flex;
+}
+
+.userMenu a {
+    text-decoration: none;
+}
+
+#user {
+    color: black;
+    font-weight: 500;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting .time {
+    font-size: small;
+}
+
+.greeting #user {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.contentButtons,
+.userMenu {
+    margin-left: auto;
+}
+
+.contentButtons button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: calc(10px + 0.5rem);
+}
+
 
 
 /* Content Panel */
