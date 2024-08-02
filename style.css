@@ -280,6 +280,7 @@ a {
 .cardText {
   /* https://css-tricks.com/line-clampin/ */
   display: -webkit-box;
+  line-clamp: 5;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;  
   overflow: hidden;
@@ -336,6 +337,7 @@ a {
 
 .announcementText {
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
